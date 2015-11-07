@@ -116,9 +116,13 @@ fis.config.merge({
 		modules : {
 				//fis插件配置
 				postprocessor: {
-						js: 'amd',
-						html: 'amd' // 如果你的项目中也有一些 html 文件需要使用 AMD
-				}
+						js: 'require-async',
+						html: 'require-async' // 如果你的项目中也有一些 html 文件需要使用 AMD
+				},
+        postpackager: ['autoload', 'simple'],
+        lint: {
+            js: 'jshint'
+        }
 		},
 
 		settings : {
@@ -126,7 +130,21 @@ fis.config.merge({
 						'png-compressor' : {
 								type : 'pngquant' //fis-optimizer-png-compressor, default is pngcrush
 						}
-				}
+				},
+				lint: {
+            jshint: {
+                camelcase: true,
+                curly: true,
+                eqeqeq: true,
+                forin: true,
+                immed: true,
+                latedef: true,
+                newcap: true,
+                noarg: true,
+                noempty: true,
+                node: true
+            }
+        }
 		},
 
 		// symbol 作为文本文件编译

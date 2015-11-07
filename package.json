@@ -7,9 +7,15 @@
     "cf": "bin/cf.js"
   },
   "scripts": {
+    "uninstall": "node bin/cf server stop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/sirius-cg/fis-cf"
+  },
   "dependencies": {
+    "fis3": "^3.2.0",
     "fis-lint-jshint": "0.0.10",
     "fis-optimizer-png-compressor": "^0.1.0",
     "fis-optimizer-shutup": "0.0.1",
@@ -19,15 +25,12 @@
     "fis-postpackager-simple": "0.0.26",
     "fis-postprocessor-amd": "^0.2.18",
     "fis-postprocessor-require-async": "0.0.9",
-    "fis3": "^3.2.0",
-    "fis3-hook-module": "^1.2.2",
     "fis3-postprocessor-extras_uri": "^0.1.0",
+    "fis3-hook-module": "^1.2.2",
     "fis3-spriter-csssprite": "^0.1.0"
   },
   "keywords": [
     "cf",
-    "fe",
-    "solution",
     "fis3"
   ],
   "author": "phoenixC<sirius.cg@gmail.com>",
