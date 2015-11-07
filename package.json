@@ -1,6 +1,6 @@
 {
   "name": "cf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a simple front-end solution.",
   "main": "index.js",
   "bin": {
@@ -20,7 +20,7 @@
     "fis-optimizer-png-compressor": "^0.1.0",
     "fis-optimizer-shutup": "0.0.1",
     "fis-parser-less": "^0.1.3",
-    "fis-parser-node-sass": "^0.1.0",
+    "fis-parser-node-sass": "^0.1.4",
     "fis-postpackager-autoload": "^0.1.1",
     "fis-postpackager-simple": "0.0.26",
     "fis-postprocessor-amd": "^0.2.18",
