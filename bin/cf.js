@@ -1,12 +1,13 @@
 #!/usr/bin/env node
+
 var Liftoff = require('liftoff');
 var argv = require('minimist')(process.argv.slice(2));
 var path = require('path');
 var cli = new Liftoff({
   name: 'cf',
-  processTitle: 'cf',
+  processTitle: 'fis',
   moduleName: 'cf',
-  configName: 'cf-conf',
+  configName: 'fis-conf',
 
   // only js supported!
   extensions: {
@@ -26,5 +27,6 @@ cli.launch({
   }
   fis.set('system.localNPMFolder', path.join(env.cwd, 'node_modules/cf'));
   fis.set('system.globalNPMFolder', path.dirname(__dirname));
+  fis.cli.name = this.name;
   fis.cli.run(argv, env);
 });
