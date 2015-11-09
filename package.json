@@ -15,6 +15,10 @@
       "url": "https://github.com/sirius-cg/fis-cf"
   },
   "dependencies": {
+    "fis3": "^3.2.0",
+    "liftoff": "^2.1.0",
+    "minimist": "^1.1.1",
+    "path": "^0.12.7",
     "fis-lint-jshint": "0.0.10",
     "fis-optimizer-png-compressor": "^0.1.0",
     "fis-optimizer-shutup": "0.0.1",
